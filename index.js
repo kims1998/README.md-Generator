@@ -28,6 +28,16 @@ function userPrompt(){
             name: "usage",
         },
         {
+            type: "input",
+            message: "Were there any other contributors? If so, please include them here:",
+            name: "contributors",
+        },
+        {
+            type: "input",
+            message: "Is there a test included?",
+            name: "test",
+        },
+        {
             type: "list",
             message: "Chose the appropriate license for this project: ",
             choices: [
@@ -40,21 +50,6 @@ function userPrompt(){
                 "Open"
             ],
             name: "license",
-        },
-        {
-            type: "input",
-            message: "Were there any other contributors? If so, please include them here:",
-            name: "contributors",
-        },
-        {
-            type: "input",
-            message: "Is there a test included?",
-            name: "test",
-        },
-        {
-            type: "input",
-            message: "What should the user do if they have issues?",
-            name: "questions",
         },
         {
             type: "input",
